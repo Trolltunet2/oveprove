@@ -1,0 +1,107 @@
+<section class="oppsett">
+
+    <a class="en-kolonne">Verdens tre høyeste skyskrapere</a>
+
+    <div class="en-kolonne2">
+        <table>
+            <tr style="color:white; background-color: #3f4259;">
+                <th>Skyskraper</th>
+                <th>Høyde</th>
+                <th>By</th>
+                <th>Land</th>
+                <th>Byggeår</th>
+            </tr>
+    
+            <tr>
+                <th>Burj Khalifa</th>
+                <th>828 m</th>
+                <th>Dubai</th>
+                <th>De forente arabiske emirater</th>
+                <th>2009</th>
+            </tr>
+    
+            <tr style="background-color: #bdd4de;">
+                <th>Shanghai Tower</th>
+                <th>632 m</th>
+                <th>Shanghai</th>
+                <th>Kina</th>
+                <th>2014</th>
+            </tr>
+    
+            <tr>
+                <th>Makkah Royal Clock Tower</th>
+                <th>601 m</th>
+                <th>Mekka</th>
+                <th>Saudi-Arabia</th>
+                <th>2011</th>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="tre-kolonner image1" style="background-image: url('burj_stor.jpg'); background-size: cover;"></div>
+    <div class="tre-kolonner image2" style="background-image: url('Makkah_stor.jpg'); background-size: cover;"></div>
+    <div class="tre-kolonner image3" style="background-image: url('Shanghai_stor.jpg'); background-size: cover;"></div>
+    
+
+</section>
+
+<style>
+
+    .oppsett {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 80rem;
+        grid-auto-rows: minmax(12rem, 1fr);
+        border: 10px solid #404040;
+
+    }
+
+    table, th, td {
+        border: 1px solid #ffffff;
+      }
+
+    table {
+        padding: 5px;
+    }
+
+    .oppsett a {
+
+        background-color: #3f5765 ;
+
+    }
+
+    .en-kolonne, .en-kolonne2 {
+        border: 2px solid black;
+        grid-column: span 3;
+    }
+
+    .en-kolonne {
+        color:white;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .tre-kolonner {
+        grid-column: span 1;
+        grid-row: span 3;
+        width: 200px; 
+        height: 200px; 
+    }
+    
+    .image1 {
+        background-image: url('burj_stor.jpg');
+    }
+    
+    .image2 {
+        background-image: url('Makkah_stor.jpg');
+    }
+    
+    .image3 {
+        background-image: url('Shanghai_stor.jpg');
+    }
+
+    
+
+</style>
