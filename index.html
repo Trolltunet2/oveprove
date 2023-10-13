@@ -1,7 +1,5 @@
 <section class="oppsett">
-
     <a class="en-kolonne">Verdens tre høyeste skyskrapere</a>
-
     <div class="en-kolonne2">
         <table>
             <tr style="color:white; background-color: #3f4259;">
@@ -11,7 +9,6 @@
                 <th>Land</th>
                 <th>Byggeår</th>
             </tr>
-    
             <tr>
                 <th>Burj Khalifa</th>
                 <th>828 m</th>
@@ -19,7 +16,6 @@
                 <th>De forente arabiske emirater</th>
                 <th>2009</th>
             </tr>
-    
             <tr style="background-color: #bdd4de;">
                 <th>Shanghai Tower</th>
                 <th>632 m</th>
@@ -27,7 +23,6 @@
                 <th>Kina</th>
                 <th>2014</th>
             </tr>
-    
             <tr>
                 <th>Makkah Royal Clock Tower</th>
                 <th>601 m</th>
@@ -36,74 +31,53 @@
                 <th>2011</th>
             </tr>
         </table>
-
     </div>
-
-    <div class="tre-kolonner image1" style="background-image: url('/Bildus/burj_stor.jpg'); background-size: cover;"></div>
-    <div class="tre-kolonner image2" style="background-image: url('/Bildus/Makkah_stor.jpg'); background-size: cover;"></div>
-    <div class="tre-kolonner image3" style="background-image: url('/Bildus/Shanghai_stor.jpg'); background-size: cover;"></div>
-    
-
+    <div class="tre-kolonner image1" style="background-image: url('burj_stor.jpg'); background-size: cover;"></div>
+    <div class="tre-kolonner image2" style="background-image: url('Makkah_stor.jpg'); background-size: cover;"></div>
+    <div class="tre-kolonner image3" style="background-image: url('Shanghai_stor.jpg'); background-size: cover;"></div>
 </section>
-
 <style>
-
     .oppsett {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         max-width: 80rem;
         grid-auto-rows: minmax(12rem, 1fr);
         border: 10px solid #404040;
-
     }
-
     th, td {
         border: 1px solid #ffffff;
         padding: 8px;
         text-align: left;
-      }
-
+    }
     table {
         width: 100%;
         border-collapse: collapse;
     }
-
     .oppsett a {
-        background-color: #3f5765 ;
+        background-color: #3f5765;
     }
-
     .en-kolonne, .en-kolonne2 {
         border: 2px solid black;
         grid-column: span 3;
     }
-
     .en-kolonne {
-        color:white;
+        color: white;
         font-size: 5rem;
         text-align: center;
     }
-
     .tre-kolonner {
         grid-column: span 1;
         grid-row: span 3;
-        width: 200px; 
-        height: 200px; 
+        width: 200px;
+        height: 200px;
     }
-    
     .image1 {
-        background: url('/PRØVE/Bildus/burj_stor.jpg') center/cover no-repeat;
+        background: url('burj_stor.jpg') center/cover no-repeat;
     }
-    
     .image2 {
-        background: url('/PRØVE/Bildus/Makkah_stor.jpg') center/cover no-repeat;
+        background: url('Makkah_stor.jpg') center/cover no-repeat;
     }
-    
     .image3 {
-        background: url('/PRØVE/Bildus/Shanghai_stor.jpg') center/cover no-repeat;
+        background: url('Shanghai_stor.jpg') center/cover no-repeat;
     }
-    
-
-    
-
 </style>
